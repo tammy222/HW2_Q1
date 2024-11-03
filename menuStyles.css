@@ -1,0 +1,64 @@
+nav {
+    width: 500px;
+    border: thin solid blue;
+    font-weight: bold;
+    text-align: left;
+    color: black;
+    background-color: darkgray;
+}
+p {
+    font-size: 40pt;
+    color: darkblue;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    box-shadow: 2px 2px 5px darkgoldenrod;
+}
+
+.additionalFormatting {
+    font-size: 20pt;
+    color: #0066cc;
+    width: 35%;
+    height: 120px;
+    text-align: center;
+    overflow: scroll;
+    font-family: Arial, sans-serif;
+
+}
+a.tooltip:link {
+    color: green;
+}
+
+a.tooltip:visited {
+    color: purple;
+}
+
+a.tooltip:hover {
+    color: orange;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: lightgrey;
+    color: darkred;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
